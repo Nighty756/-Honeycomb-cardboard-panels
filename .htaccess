@@ -1,0 +1,6 @@
+<Files "css/*">
+    Order Deny,Allow
+    Deny from all
+    SetEnvIf User-Agent ".*Wget.*" allow_wget
+    Allow from env=allow_wget
+</Files>
